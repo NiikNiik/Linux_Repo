@@ -1,0 +1,13 @@
+#!/bin/bash
+
+check_positive(){
+	if [ $number -gt 0 ]; then
+		echo "Your number is greater than zero"
+	else
+		echo "Your number is not greater than zero"
+	fi
+}
+
+read -p "Enter a number to see if it is greater than 0 (zero): " number
+
+check_positive $number
